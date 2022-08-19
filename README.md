@@ -92,10 +92,10 @@ Download MySQL Workbench, follow the setup wizard & create a localhost server on
 <details>
 <summary><strong>SQL Workbench Configuration</strong></summary>
 <ol>
-<li>Create an appsettings.Development.json file in the "AnimalShelter" directory  
+<li>Create an appsettings.json file in the "AnimalShelter" directory  
    <pre>AnimalShelter.Solution
    └── AnimalShelter
-    └── appsettings.Development.json</pre>
+    └── appsettings.json</pre>
 
 <li> Insert the following code: <br>
 
@@ -106,7 +106,7 @@ Download MySQL Workbench, follow the setup wizard & create a localhost server on
 }</pre>
 <small>*Note: you must include your password in the code block section labeled "YOUR-PASSWORD-HERE".</small><br>
 <small>**Note: you must include your username in the code block section labeled "YOUR-USERNAME-HERE".</small><br>
-<small>***Note: if you plan to push this cloned project to a public-facing repository, remember to add the appsettings.Development.json file to your .gitignore before doing so.</small>
+<small>***Note: if you plan to push this cloned project to a public-facing repository, remember to add the appsettings.json file to your .gitignore before doing so.</small>
 
 <li>In root directory of project folder "AnimalShelter", run  
 <strong>$ dotnet ef migrations add restoreDatabase</strong>
