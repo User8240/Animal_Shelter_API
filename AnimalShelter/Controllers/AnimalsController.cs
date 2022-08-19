@@ -83,12 +83,13 @@ namespace AnimalShelter.Controllers
 
       return CreatedAtAction("Post", new { id = animal.AnimalId }, animal);
     }
-
+//--------------------------------------------------------------------------------
     /// <summary>
     /// Deletes a specific AnimalShelter Animal
     /// </summary>
     /// <param name="id"></param>
     /// <returns></returns>
+
     // DELETE: api/Animals/5
     [HttpDelete("{id}")]
     public async Task<IActionResult> DeleteAnimal(int id)
@@ -135,7 +136,7 @@ namespace AnimalShelter.Controllers
       return NoContent();
     }
 
-
+    // GET: api/Animals/{id}
     [HttpGet("{id}")]
     public async Task<ActionResult<Animal>> GetAnimal(int id)
     {
