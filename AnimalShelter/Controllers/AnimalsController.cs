@@ -90,7 +90,7 @@ namespace AnimalShelter.Controllers
     /// <param name="id"></param>
     /// <returns></returns>
 
-    // DELETE: api/Animals/5
+    // DELETE api/Animals/5
     [HttpDelete("{id}")]
     public async Task<IActionResult> DeleteAnimal(int id)
     {
@@ -105,8 +105,8 @@ namespace AnimalShelter.Controllers
 
       return NoContent();
     }
-//----------------------------------------------------------------------------------
-    // PUT: api/Animals/5
+
+    // PUT api/Animals/5
     [HttpPut("{id}")]
     public async Task<IActionResult> Put(int id, Animal animal)
     {
@@ -136,7 +136,7 @@ namespace AnimalShelter.Controllers
       return NoContent();
     }
 
-    // GET: api/Animals/{id}
+    // GET api/Animals/{id}
     [HttpGet("{id}")]
     public async Task<ActionResult<Animal>> GetAnimal(int id)
     {
